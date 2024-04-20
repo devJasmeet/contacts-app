@@ -67,7 +67,7 @@ function App() {
             if (nameA > nameB) {
               return 1;
             }
-            return 0; // Names are equal
+            return 0; 
         });
     }
 

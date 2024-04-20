@@ -14,7 +14,7 @@ function AddUpdate({isOpen,onClose,isUpdate,contactToUpdate}) {
     function hideFormError() {  setErrorFlag(false); }
 
     const  addContact = async (contact) => {
-        console.log("add contact called");
+        //console.log("add contact called");
         if(contact) {
             const res = await createContact(contact);
             if(res == null) setError(res)
@@ -24,7 +24,7 @@ function AddUpdate({isOpen,onClose,isUpdate,contactToUpdate}) {
     }
 
     const updateContact = async (contact,id) => {
-        console.log("Update contact called");
+        //console.log("Update contact called");
         if(contact) {
             const res = await modifyContact(contact,id);
             if(res == null) setError(res)

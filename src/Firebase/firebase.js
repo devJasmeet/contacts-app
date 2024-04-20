@@ -15,7 +15,7 @@ export const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
 
 export async function createContact(contact) {
-  console.log("Add function called");
+  //console.log("Add function called");
   try {
     const ref = collection(db,"contact-details");
     await addDoc(ref,contact);
@@ -26,8 +26,7 @@ export async function createContact(contact) {
 }
 
 export async function modifyContact(contact,id) {
-  console.log("Modify function called");
-  //console.log("Contact :: ",contact);
+  //console.log("Modify function called");
   try {
     const ref = doc(db,"contact-details",id);
     await updateDoc(ref,contact);
