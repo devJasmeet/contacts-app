@@ -24,7 +24,7 @@ function App() {
                             ...doc.data()
                         }
                     });
-                    console.log("contacts list :: ",contactList);
+                    //console.log("contacts list :: ",contactList);
                     sortContacts(contactList)
                     setContacts(contactList)
                     

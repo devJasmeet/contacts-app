@@ -50,7 +50,6 @@ function AddUpdate({isOpen,onClose,isUpdate,contactToUpdate}) {
                     }
 
                     onSubmit={(values) => {
-                    //console.log(errorFlag);
                         
                         if(values.name != '' && values.email != '') {
                             console.log('done');
